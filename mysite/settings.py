@@ -11,6 +11,10 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 import os
 from pathlib import Path
+from decouple import config
+
+OXFORD_APP_ID = config('OXFORD_APP_ID', default='')
+OXFORD_APP_KEY = config('OXFORD_APP_KEY', default='')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent

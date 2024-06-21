@@ -1,2 +1,3 @@
 venv/
 mb.json/
+.env
